@@ -1,6 +1,4 @@
-**California Forest Pest Council**
-**Code of Ethics**
-**Preamble**
+# SOP-001: Code of Ethics Draft {- #sop-001}
 
 The California Forest Pest Council (CFPC), founded in 1951, is a cooperative organization composed of individuals and organizations committed to the health and stewardship of California's forests. Through education, scientific exchange, and collaboration, the Council promotes the understanding, prevention, detection, evaluation, and management of forest pests and other factors affecting forest health.
 
@@ -49,4 +47,5 @@ Violations of this Code may be reviewed and addressed in accordance with the Cou
 
 Adopted by the California Forest Pest Council on ______________, 20___.
 
+---
 

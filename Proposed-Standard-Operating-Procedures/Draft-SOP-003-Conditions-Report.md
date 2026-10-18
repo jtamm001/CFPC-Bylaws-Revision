@@ -1,28 +1,13 @@
----
-title: "Standard Operating Procedure: Annual Forest Pest Conditions Report & Publication Guidelines"
-subtitle: "California Forest Pest Council (CFPC) — SOP-003"
-author: "CFPC Editorial Committee & Executive Committee"
-date: "October 2026"
-output:
-  html_document:
-    toc: true
-    toc_depth: 3
-    toc_float: true
-    theme: readable
-    highlight: tango
-  pdf_document:
-    toc: true
-    toc_depth: 3
----
+# SOP-003: Conditions Report Draft  {- #sop-003}
 
-# ARTICLE I. PURPOSE AND GOVERNING AUTHORITY
+**ARTICLE I. PURPOSE AND GOVERNING AUTHORITY**
 
 1. **Purpose:** This Standard Operating Procedure (SOP) operationalizes **Section 4.06(a)** and **Section 7.06** of the California Forest Pest Council (CFPC) Bylaws. It establishes formal guidelines for compiling, technical editing, publishing, and distributing the annual *California Forest Pest Conditions Report* and official meeting summaries.
 2. **Governing Scope:** Applies to the Editorial Committee, Technical Committee Chairs (Insects, Diseases, Invasive Vegetation, Animal Damage, Southern California), agency liaisons, and contributing forest health specialists.
 
 ---
 
-# ARTICLE II. EDITORIAL COMMITTEE LEADERSHIP & RESPONSIBILITIES
+**ARTICLE II. EDITORIAL COMMITTEE LEADERSHIP & RESPONSIBILITIES**
 
 1. **Chairperson Appointment (§ 4.06a):** The Editorial Committee Chair shall preferably be a professional representative designated by the Director of the California Department of Forestry and Fire Protection (CAL FIRE).
 2. **Core Responsibilities:**
@@ -33,7 +18,7 @@ output:
 
 ---
 
-# ARTICLE III. REPORT STRUCTURE AND CONTENT STANDARDS
+**ARTICLE III. REPORT STRUCTURE AND CONTENT STANDARDS**
 
 The annual *California Forest Pest Conditions Report* shall maintain a standardized, professional structure:
 
@@ -49,7 +34,7 @@ The annual *California Forest Pest Conditions Report* shall maintain a standardi
 
 ---
 
-# ARTICLE IV. ANNUAL PUBLICATION TIMELINE AND WORKFLOW
+**ARTICLE IV. ANNUAL PUBLICATION TIMELINE AND WORKFLOW**
 
 To ensure timely delivery to the California Board of Forestry and Fire Protection and the general membership, the publication workflow follows a strict annual schedule:
 
@@ -64,7 +49,7 @@ To ensure timely delivery to the California Board of Forestry and Fire Protectio
 
 ---
 
-# ARTICLE V. DISTRIBUTION, ARCHIVING, AND REPOSITORY MANAGEMENT
+**ARTICLE V. DISTRIBUTION, ARCHIVING, AND REPOSITORY MANAGEMENT**
 
 1. **Official Distribution List:** Upon publication, the Editorial Committee and Council Secretary shall distribute copies (digital PDF or print) to:
    * Executive Committee members and general CFPC membership.
@@ -75,8 +60,11 @@ To ensure timely delivery to the California Board of Forestry and Fire Protectio
 
 ---
 
-# ARTICLE VI. INTELLECTUAL PROPERTY & CITATION STANDARDS
+**ARTICLE VI. INTELLECTUAL PROPERTY & CITATION STANDARDS**
 
 1. **Photo & Data Permissions:** All photographs, figures, and spatial maps included in the report must include explicit attribution to the author/agency. Uncredited stock images are strictly prohibited.
 2. **Suggested Citation Format:**  
    *California Forest Pest Council. (Year).* California Forest Pest Conditions [Year]. *Official Report of the California Forest Pest Council, Sacramento, CA. [Pages].*
+
+---
+

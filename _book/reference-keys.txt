@@ -5,15 +5,10 @@ irs-letter
 proposed-bylaws-of-the-california-forest-pest-council
 interactive-comparison
 proposed-2026-text
-preamble
 interactive-comparison-1
 proposed-2026-text-1
-article-i.-name-and-objectives
-section-1.01-name
 interactive-comparison-2
 proposed-2026-text-2
-article-ii.-membership-ethics
-section-section-2.01-eligibility-for-membership
 interactive-comparison-3
 proposed-2026-text-3
 interactive-comparison-4
@@ -31,7 +26,6 @@ proposed-2026-text-9
 interactive-comparison-10
 proposed-2026-text-10
 sop-suite
-master-repository-navigation-menu-1
 governance-crosswalk-table
 purpose-regulatory-compliance
 internal-financial-controls

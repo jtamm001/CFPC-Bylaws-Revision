@@ -1,28 +1,13 @@
----
-title: "Standard Operating Procedure: Annual Meeting Planning, Registration, and Field Tour Safety"
-subtitle: "California Forest Pest Council (CFPC) — SOP-005"
-author: "CFPC Conference Committee & Executive Committee"
-date: "October 2026"
-output:
-  html_document:
-    toc: true
-    toc_depth: 3
-    toc_float: true
-    theme: readable
-    highlight: tango
-  pdf_document:
-    toc: true
-    toc_depth: 3
----
+# SOP-007: Field Safety {- #sop-007}
 
-# ARTICLE I. PURPOSE AND GOVERNING AUTHORITY
+**ARTICLE I. PURPOSE AND GOVERNING AUTHORITY
 
 1. **Purpose:** This Standard Operating Procedure (SOP) operationalizes **Section 4.06(b)** (Conference Committee) and **Section 7.02** (Full Council Annual Meeting) of the California Forest Pest Council (CFPC) Bylaws. It provides a structured framework for program development, registration management, venue contracting, continuing education accreditation, and field tour safety risk mitigation.
 2. **Governing Scope:** Applies to the Conference Committee, Technical Committee Chairs, Council Officers, event logistics staff, and all attendees participating in Council-sponsored meetings and outdoor field tours.
 
 ---
 
-# ARTICLE II. CONFERENCE COMMITTEE STRUCTURE AND TIMELINE
+**ARTICLE II. CONFERENCE COMMITTEE STRUCTURE AND TIMELINE
 
 1. **Committee Composition (§ 4.06b):** The Conference Committee shall consist of a Chairperson appointed by the Executive Committee, supported by designated coordinators for Program Agenda, Local Arrangements, Registration, Financial Accounts, and Continuing Education.
 2. **Annual Planning Timeline:**
@@ -38,7 +23,7 @@ output:
 
 ---
 
-# ARTICLE III. REGISTRATION MANAGEMENT & VOTING ELIGIBILITY
+**ARTICLE III. REGISTRATION MANAGEMENT & VOTING ELIGIBILITY
 
 1. **Registration Fee Structure:** The Conference Committee, in consultation with the Treasurer, shall establish registration fees to cover venue costs, catering, field transportation, and proceedings printing.
 2. **Eligibility Roster Synchronization:**
@@ -48,7 +33,7 @@ output:
 
 ---
 
-# ARTICLE IV. CONTINUING EDUCATION UNITS (CEU) ACCREDITATION
+**ARTICLE IV. CONTINUING EDUCATION UNITS (CEU) ACCREDITATION
 
 To maintain professional value for natural resource practitioners, the Conference Committee shall submit educational agendas to accredited licensing bodies:
 
@@ -58,15 +43,15 @@ To maintain professional value for natural resource practitioners, the Conferenc
 
 ---
 
-# ARTICLE V. FIELD TOUR LOGISTICS AND SAFETY RISK MITIGATION
+**ARTICLE V. FIELD TOUR LOGISTICS AND SAFETY RISK MITIGATION
 
 Outdoor field tours frequently traverse active timber operations, rugged terrain, steep slopes, and remote wildland settings. The following safety protocols are mandatory for all field sessions:
 
-### Section 5.01 Scouting, Permits, and Land Access
+**Section 5.01 Scouting, Permits, and Land Access
 1. **Private/Agency Access Agreements:** Written permission or land entry permits must be secured from private timberland owners, Tribal natural resource departments, or public land agencies prior to finalizing tour stops.
 2. **Transportation Safety:** If passenger vans or buses are hired, vendors must provide proof of commercial liability insurance. Caravan driving routes must include designated staging areas to prevent roadside traffic hazards.
 
-### Section 5.02 Personal Protective Equipment (PPE) & Site Briefings
+**Section 5.02 Personal Protective Equipment (PPE) & Site Briefings
 1. **Mandatory PPE:** All field tour participants entering active forest management zones, logging sites, or hazardous terrain shall wear:
    * Hard hats (ANSI certified)
    * High-visibility safety vests (ANSI Class 2 or 3)
@@ -74,7 +59,13 @@ Outdoor field tours frequently traverse active timber operations, rugged terrain
    * Eye and ear protection (when near operating equipment or active chipping/sampling)
 2. **Tailgate Safety Briefing:** Before departing the initial staging area, the Field Tour Leader shall conduct a 5-minute safety briefing covering terrain hazards, active weather risks (heat/hypothermia), venomous species/poison oak, and vehicle convoy safety.
 
-### Section 5.03 Emergency Medical Response Plan
+**Section 5.03 Emergency Medical Response Plan
 1. **First Aid Requirements:** Every field tour vehicle/group leader must carry a fully stocked Class B Industrial First Aid Kit, trauma dressing, and communication equipment (satellite messenger/Garmin inReach or cell booster when operating outside cellular coverage).
 2. **Medical Evacuation Routing:** The Field Coordinator shall map the nearest emergency medical facility for each tour stop and identify primary emergency access points for local emergency services (CAL FIRE / County EMS).
 3. **Incident Reporting:** Any injury or property damage occurring during a Council-sponsored event must be reported in writing to the Council Chairperson and Treasurer within twenty-four (24) hours for insurance documentation (**Bylaws § 3.07**).
+
+---
+
+---
+
+
