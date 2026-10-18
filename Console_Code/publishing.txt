@@ -1,0 +1,47 @@
+Phase 1: Configure RStudio for GitHub Pages
+By default, Bookdown builds your site into a folder named _book. GitHub Pages cannot read this folder; it strictly requires a folder named docs. Furthermore, GitHub uses a site-builder called Jekyll that will destroy Bookdown's formatting unless you explicitly tell it to back off.
+
+Change the Output Directory: Open your _bookdown.yml file and add this exact line so Bookdown builds into the correct folder:
+
+YAML
+output_dir: "docs"
+Build the Site: Run the render command in your R console to generate the new docs folder:
+
+R
+bookdown::render_book("index.Rmd", "bookdown::gitbook")
+Generate the Jekyll Bypass File: Once the docs folder exists, run this command in your R console. It places a completely blank, invisible file inside the folder that tells GitHub's native site-builder to leave your HTML alone:
+
+R
+file.create("docs/.nojekyll")
+Phase 2: Force Git to Track the Files
+RStudio's Git tool occasionally tries to ignore output folders. You need to ensure the docs/ folder makes it to GitHub.
+
+Check the .gitignore: Open your .gitignore file (in the bottom-right Files pane). If you see docs/ or docs listed anywhere in that file, delete that line and save.
+
+The Terminal Override (If the folder won't show up): If you open your Git pane and the docs/ folder is missing, do not rely on the visual interface. Go to the Terminal tab (next to your Console) and force Git to track it by typing:
+
+Bash
+git add docs/
+Commit and Push: In the Terminal (or the visual Git pane if it is working), commit the files and push them to your repository:
+
+Bash
+git commit -m "Upload docs folder and .nojekyll for GitHub Pages"
+git push
+(Note: If Git rejects the push because "the remote contains work that you do not have locally", hit the blue Pull arrow in RStudio first to sync the files, then hit Push again).
+
+Phase 3: Activate the Live URL on GitHub
+Once your files are successfully pushed to the repository, you just need to flip the switch to turn the website on.
+
+Go to your repository on GitHub.com and click the Settings tab (the gear icon).
+
+In the left-hand sidebar, click on Pages.
+
+Under the "Build and deployment" section, ensure the Source dropdown says Deploy from a branch.
+
+Under the Branch section, click the None dropdown and select your main branch (usually named main or master).
+
+In the folder dropdown right next to it, change / (root) to /docs.
+
+Click Save.
+
+That is the entire sequence. Once you click save, GitHub will take about 60 to 90 seconds to serve the HTML files. You can check the Actions tab to watch the deployment status; once you see the green checkmark, your new site is permanently live at `

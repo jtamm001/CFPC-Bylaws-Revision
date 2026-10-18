@@ -1,6 +1,6 @@
 bookdown::gitbook:
   css: style.css
-  split_by: none
+  split_by: "chapter"
   config:
     toc:
       collapse: section
@@ -8,8 +8,7 @@ bookdown::gitbook:
       before: |
         <li><a href="./">CFPC Governance Suite</a></li>
       after: |
-        <li><a href="https://github.com" target="blank">CFPC Repository</a></li>
-    download: ["pdf", "epub"]
+        <li><a href="https://github.com/jtamm001/CFPC-Bylaws-Revision" target="blank">CFPC Repository</a></li>
     sharing:
       github: yes
       facebook: no

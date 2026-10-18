@@ -1,21 +1,4 @@
----
-title: "Bylaws Audit & Revision Comments Review"
-subtitle: "California Forest Pest Council (CFPC)"
-author: "Executive Committee Bylaws Revision Team"
-date: "October 2026"
-output:
-  html_document:
-    toc: true
-    toc_depth: 3
-    toc_float: true
-    theme: readable
-    highlight: tango
-  pdf_document:
-    toc: true
-    toc_depth: 3
----
-
-# Executive Summary
+# Comments Summary
 
 This document serves as the official review and crosswalk for all revision comments, email correspondence, internal drafting tags (`[JT1]`–`[JT7]`), and regulatory notes submitted during the 2026 Bylaws update of the **California Forest Pest Council (CFPC)**.
 

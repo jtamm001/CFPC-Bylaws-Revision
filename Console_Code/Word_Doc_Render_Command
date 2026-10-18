@@ -1,1 +1,46 @@
 rmarkdown::render("Current-Bylaws-Archived/1951-CFPC-Bylaws.md", output_format = "word_document")
+
+rmarkdown::render("Proposed-2026-Bylaws/Proposed-2026-Bylaws-Export.rmd", output_format = "word_document")
+
+```{r print_full_document, include=FALSE}
+# --- STEP 1: Combine and sanitize string ---
+full_proposed_bylaws_text <- paste(proposed_2026, collapse = "\n\n")
+full_proposed_bylaws_text <- iconv(full_proposed_bylaws_text, to = "UTF-8", sub = "")
+full_proposed_bylaws_text <- gsub("[\r\b\f\v]", "", full_proposed_bylaws_text)
+
+# --- STEP 2: Setup directories and absolute paths ---
+base_dir <- getwd()
+output_dir <- file.path(base_dir, "Proposed-2026-Bylaws")
+# Using a unique filename to avoid locking the primary script
+export_rmd_path <- file.path(output_dir, "Proposed-2026-Bylaws-Export.Rmd")
+docx_path <- file.path(output_dir, "Proposed-2026-Bylaws.docx")
+
+if (!dir.exists(output_dir)) {
+  dir.create(output_dir, recursive = TRUE)
+}
+
+# --- STEP 3: Write isolated .Rmd file ---
+con <- file(export_rmd_path, open = "wt", encoding = "UTF-8")
+writeLines(
+  c(
+    "---",
+    "title: \"California Forest Pest Council - Proposed 2026 Bylaws\"",
+    "output: word_document",
+    "---",
+    "",
+    "# Complete 2026 Proposed Bylaws",
+    "",
+    full_proposed_bylaws_text
+  ),
+  con = con
+)
+close(con)
+
+# --- STEP 4: Render Word document directly ---
+# Bypassing environment conflicts by explicitly calling the word_document format
+rmarkdown::render(
+  input = "Proposed-2026-Bylaws/Proposed-2026-Bylaws-Export.Rmd",
+  output_format = "word_document",
+  quiet = TRUE
+)
+```

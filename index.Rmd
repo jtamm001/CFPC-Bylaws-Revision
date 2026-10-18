@@ -1,152 +1,273 @@
 ---
-title: "California Forest Pest Council — Master Index & Governance Crosswalk"
-subtitle: "Interactive Revision Analysis & Repository Map"
-author: "CFPC Executive Committee"
+title: "California Forest Pest Council: 2026 Governance Framework & Bylaws Revision"
+author: "Compiled by J. Tamm"
 date: "`r Sys.Date()`"
-output: 
-  html_document:
-    toc: true
-    toc_depth: 3
-    toc_float: true
-    theme: readable
-    highlight: tango
+site: bookdown::bookdown_site
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+# Executive Summary {-}
 
-# Load required libraries for crosswalk rendering and document comparison
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE
+)
 library(diffr)
 library(knitr)
 library(dplyr)
+library(here)
+library(bookdown)
+library(rmarkdown)
+
 ```
 
-1. REPOSITORY NAVIGATION INDEX
-Below is the directory map linking the core governance suite, standard operating procedures, and historical archives:
+```{r rlist-vars, echo=FALSE}
+# proposed_2026.R (or put directly in setup chunk)
+proposed_2026 <- list()
 
-Proposed 2026 Governance Suite
+proposed_2026[["00-preamble"]] <- "## PREAMBLE{-}\n\nThe California Forest Pest Council traces its origins to the California Forest Pest Control Action Council, organized in 1951 to coordinate forest pest detection, reporting, and management efforts among public agencies, private landowners, and forestry professionals throughout California.\n\nThe Council continues this tradition by bringing together representatives of public agencies, private industry, academic institutions, Tribal governments, landowners, researchers, educators, and other interested parties to promote and protect the health of California's forests."
 
-Proposed 2026 Bylaws (Master Document)
+proposed_2026[["01-name-objectives"]] <- "## ARTICLE I. NAME AND OBJECTIVES{-}\n\n### Section 1.01 NAME{-}\nThe name of this organization is the California Forest Pest Council (herein referred to as the \"Council\"), a California Nonprofit Public Benefit Corporation.\n**Section 1.02 OBJECTIVES**\nThe objectives of the Council are to:\n1. Coordinate the detection, reporting, and compilation of pest damage.\n2. Evaluate pest conditions.\n3. Make recommendations on pest control to forest management and protection agencies and forest landowners.\n4. Review policy, legal, educational, and research aspects of forest pest management and submit recommendations thereon to appropriate authorities.\n5. Foster educational work on forest pests and forest health.\n\n**Section 1.03 ADVISORY ROLE**\n\nThe Council is recognized by the California Board of Forestry and Fire Protection as an advisory body with respect to forest health protection matters."
 
-Executive Committee Comment Record
+proposed_2026[["02-membership"]] <- "## ARTICLE II. MEMBERSHIP & ETHICS {-}\n\n**Section 2.01 ELIGIBILITY FOR MEMBERSHIP**\nMembership in the Council is open to individuals and organizational representatives with an interest in forest health, forest pest management, or related natural resource fields. Members are expected to support the Council's mission and abide by the Council's Code of Ethics. The Code of Ethics shall be established, maintained, and amended by the Executive Committee as a separate Standard Operating Procedure (SOP-001) independently of these Bylaws.\n\n**Section 2.02 MEMBERSHIP RECORDS**\n\nThe Council shall maintain a roster of current members. Prospective members may be asked to provide information necessary to establish and maintain membership records in a manner approved by the Executive Committee.\n\n**Section 2.03 VOTING ELIGIBILITY**\nMembership and participation in Council activities are open to interested individuals and stakeholders. Eligibility to vote on Council matters shall be determined in accordance with Article VI (Voting Rights and Eligibility).\n\n**Section 2.04 SUSPENSION OR TERMINATION OF MEMBERSHIP**\n\n**(a) Grounds:**\nMembership, including any associated voting privileges, may be suspended or terminated for conduct inconsistent with the Council's Code of Ethics, bylaws, or mission.\n\n**(b) Procedures:**\nThe Council shall seek to address concerns through discussion and resolution whenever practical. Before suspension or termination becomes effective, the member shall be informed of the concern and provided an opportunity to respond. Suspension or termination shall require approval by a two-thirds (2/3) vote of the Executive Committee members present and voting.\n\n**(c) Interim Action:**\nIf circumstances warrant, the Chairperson may temporarily limit a member's participation in Council activities pending review by the Executive Committee. Any such action shall be reviewed by the Executive Committee at its next meeting or as soon as reasonably practicable."
 
-Revision Summary
+proposed_2026[["03-officers"]] <- "## Article III. OFFICERS AND MEMBERS-AT-LARGE {-}\n\n### Section 3.01 OFFICERS AND TERMS{-}\nThe Council shall elect from its membership for a two-year term of office a Chairperson, Vice-Chairperson, Secretary, Treasurer, and three (3) Members-at-Large.\n\n**Section 3.02 DUTIES OF THE CHAIRPERSON**\nThe Chairperson shall preside at all meetings of the Council and the Executive Committee and shall perform any other duties or functions authorized by the Executive Committee.\nThe Chairperson may establish temporary Ad Hoc committees and appoint their chairpersons, subject to ratification by the Executive Committee.\nThe Chairperson serves as an ex-officio, non-voting member of all other standing or ad hoc committees of the Council.\n\nThe Council Chairperson, or an Executive Committee member or authorized designee appointed by the Chairperson, shall represent the Council, report forest pest conditions and recommendations of the Council to the California Board of Forestry and Fire Protection, and appear on behalf of the Council before other organizations as appropriate.\n\n\n**Section 3.03 DUTIES OF VICE-CHAIRPERSON**\nIn the event the Chairperson is absent or is unable or unwilling to perform their duties, the Vice-Chairperson shall perform all the duties of the Chairperson.\n\n**Section 3.04 DUTIES OF SECRETARY**\nThe Secretary shall be custodian of the records and keep the original and a copy of these Bylaws, a book of minutes of all meetings of the Executive Committee and Council business meetings, and a copy of all conditions reports, proceedings, and publications distributed by the Council.\nThe Secretary shall take minutes at Executive Committee and Council business meetings, distribute them to the Executive Committee within thirty (30) days following the meeting, ensure meeting notices are distributed in a timely fashion, and maintain the current membership list.\n\n**Section 3.05 DUTIES OF TREASURER**\nThe Treasurer shall receive all payments, serve as custodian of Council funds, keep an account of all monies received and expended, and make commitments and disbursements authorized by the Executive Committee.\nAt the annual business meeting and when requested by the Executive Committee, the Treasurer shall make a full report covering the financial affairs of the Council.\nAll funds, books, records, and vouchers under the Treasurer's control shall be subject to inspection and verification by the Executive Committee.\nThe Treasurer shall deliver to their successor all books, records, money, and accounts pertaining to or belonging to the Council.\n\n\n**Section 3.06 NON-LIABILITY OF OFFICERS AND DIRECTORS**\nThe Officers, Executive Committee members, and committee chairs shall not be personally liable for the debts, liabilities, or other obligations of the Council.\n\n**Section 3.07 INDEMNIFICATION AND INSURANCE**\nTo the fullest extent permitted by California law, the Council shall indemnify its Officers, Executive Committee members, committee chairs, and authorized agents acting in good faith and in a manner they reasonably believed to be in the best interests of the Council.\nThe Council may maintain appropriate Errors & Omissions (E&O) insurance or professional liability coverage for the protection of its leadership and agents against claims arising from acts, errors, omissions, or performance of duties undertaken on behalf of the Council.\n\n**Section 3.08 VACANCIES**\nVacancies in any elected office or Member-at-Large position may be filled by vote of the Executive Committee for the unexpired portion of the term until the next regular election."
 
-Standard Operating Procedures (SOPs)
+proposed_2026[["04-committees"]] <- "## Article IV. COMMITTEES {-}\n\n**Section 4.01 COMMITTEES**\nThe Council shall conduct its activities through Technical Committees, Administrative Committees, Ad Hoc committees, Task Forces, and the Executive Committee (collectively referred to as \"Committees\").\n\nTo maintain operational flexibility, the Executive Committee may establish, restructure, consolidate, rename, or dissolve Committees as necessary to fulfill the purposes of the Council.\n\n**Section 4.02 COMMITTEE REPRESENTATION ON EXECUTIVE COMMITTEE**\nThe Chairperson of each standing Technical Committee, Administrative Committee, and active Task Force shall serve as its designated representative on the Executive Committee. No individual shall cast more than one vote on the Executive Committee, regardless of the number of leadership roles held.\n\n**Section 4.03 STANDARD OPERATING PROCEDURES**\nEach Committee is authorized to develop and maintain its own Standard Operating Procedures (SOPs), guidelines, or charters to govern its internal activities, meetings, and leadership elections. These operational documents may be drafted and refined progressively over time. They shall take effect upon their independent review and approval by the Executive Committee, provided they do not conflict with these Bylaws.\n\n**Section 4.04 SUBGROUP STRUCTURE AND TRACKS**\nThe structure of Council subgroups shall align with their intended function:\n\n(a) **Technical / Elected Track:** Technical Committees shall have open membership and elect their own leadership.\n(b) **Administrative / Appointed Track:** Administrative Committees shall have their leadership appointed by the Executive Committee.\n(c) **Task Forces and Ad Hoc Committees:** Upon establishing a Task Force or Ad Hoc committee, the Executive Committee shall designate its leadership structure under either the elected or appointed track.\n\n**Section 4.05 TECHNICAL COMMITTEES**\nThe Council shall maintain Technical Committees addressing core forest health priorities, including forest insects, forest diseases, invasive vegetation, animal damage, and Southern California forest health issues.\n\n**Section 4.06 ADMINISTRATIVE COMMITTEES**\nThe Council shall maintain the following Administrative Committees:\n\n**(a) The Editorial Committee:** Responsible for arranging the preparation and publication of the annual forest pest conditions report, proceedings of the annual meeting, and other official publications. The Editorial Committee chair shall preferably be designated by the Director of the California Department of Forestry and Fire Protection.\n\n**(b) The Conference Committee:**\n Responsible for planning and executing the annual meeting of the California Forest Pest Council, including programming, local arrangements, registration, and publicity.\n\n**Section 4.07 TASK FORCES**\nTask Forces address specific, complex, or ongoing forest health issues (e.g., Firewood Task Force, Pitch Canker Task Force) and operate as standing operational bodies dedicated to a focused area of concern.\n\n**Section 4.08 AD HOC COMMITTEES**\nAd Hoc committees are temporary bodies created for a specific task and shall automatically dissolve upon submitting their final findings or completing their designated objective."
 
-SOP-001: Code of Ethics
+proposed_2026[["05-executive-committee"]] <- paste(
+  "## ARTICLE V. THE EXECUTIVE COMMITTEE {-}",
+  
+  "**Section 5.01 ROLE, DUTIES, AND AUTHORITY**\nThe Executive Committee manages the operational affairs of the Council between membership meetings, coordinates the activities of the Council and its committees, reviews recommendations for Council action, oversees Council finances and grant administration, and serves as the official voice of the Council.\n\nWhen taking action on matters within the scope of a specific committee, the Executive Committee shall seek input from the affected committee prior to taking action whenever practical.\n\nFor purposes of the California Nonprofit Public Benefit Corporation Law, the Executive Committee serves as the Board of Directors of the corporation.",
+  
+  "**Section 5.02 COMPOSITION AND APPOINTMENTS**\n\n**(a) Officers:**\nThe Officers of the Council (Chairperson, Vice-Chairperson, Secretary, and Treasurer).\n\n**(b) Committee Representatives:**\nThe Chairperson of each Technical Committee, Administrative Committee, and Task Force.\n\n**(c) Members-at-Large:**\nThree (3) Members-at-Large elected by the Council.\n\n**(d) Agency and Industry Representation Appointments:**\nIn the event the membership of the Executive Committee set forth in subsections (a) through (c) does not include at least one (1) representative each from:\n1. The California Department of Forestry and Fire Protection (CAL FIRE);\n2. The Pacific Southwest Region of the USDA Forest Service;\n3. The University of California;\n4. Private industry;\n\nthe Chairperson is authorized to appoint an additional person or persons as necessary to ensure representation from these organizations.\n\n**(e) Alternates:**\nEach Executive Committee member may designate an alternate to attend an Executive Committee meeting on their behalf in the event they cannot attend. Because the Executive Committee serves as the Board of Directors under California law, designated alternates may participate in discussions but shall **not** have voting privileges and shall **not** count toward establishing a quorum.",
+  
+  "**Section 5.03 SCOPE OF AUTHORITY AND OPERATIONAL LIMITS**\nTo ensure efficient management while preserving fundamental corporate governance:\n\n**(a) Executive Committee Scope:**\nThe Executive Committee has full authority to:\n1. Direct Council operations, manage grants, oversee corporate assets, and manage discretionary spending;\n2. Adopt, amend, and enforce Standard Operating Procedures (SOPs) to govern overall Council operations, including financial approval thresholds for Executive Committee actions;\n3. Review and approve Standard Operating Procedures (SOPs), guidelines, and charters developed by sub-committees, working groups, or task forces;\n4. Adopt official Council public policy positions, technical recommendations, public statements, and formal resolutions, or, at the Executive Committee’s discretion, submit significant policy matters to a vote of the general membership pursuant to Section 8.01(b);\n5. Appoint committee chairs and fill interim leadership vacancies as authorized by these Bylaws;\n6. Take emergency action on behalf of the Council when immediate action is necessary to protect the Council’s interests.\n\n**(b) Reserved Membership Authority:**\nThe Executive Committee shall **not** take the following actions without approval by a vote of the general membership:\n1. Amending or repealing these Bylaws or the Articles of Incorporation;\n2. Electing Officers and Members-at-Large;\n3. Approving major structural corporate actions, such as a merger, dissolution, major reorganization, or selling/disposing of substantially all Council assets.",
+  
+  "**Section 5.04 VOTING AND QUORUM**\nEach defined member of the Executive Committee shall be entitled to one (1) vote.\n\nA quorum shall consist of fifty percent (50%) of the voting members of the Executive Committee. Unless otherwise provided in these Bylaws, actions of the Executive Committee shall be decided by a simple majority (50% plus one) vote of the voting members present.",
+  
+  "**Section 5.05 ACTION WITHOUT A MEETING AND ELECTRONIC VOTING**\n**(a) Action by Written Consent:**\nAny action required or permitted to be taken by the Executive Committee may be taken without a meeting if all voting members of the Executive Committee consent in writing (including electronic mail) to the action.\n\n**(b) Electronic Meetings and Email Votes:**\nIn lieu of a physical meeting, the Chairperson may call an electronic or email vote on urgent or routine operational matters. Provided that a quorum of the Executive Committee submits written responses or votes via electronic transmission within a specified response window, the action shall be decided by a simple majority vote of those responding. All written consents, ballots, and electronic votes shall be filed with the minutes of the Executive Committee.",
+  
+  sep = "\n\n"
+)
 
-SOP-002: Committee Charter Template
+proposed_2026[["06-voting-rights"]] <- "## Article VI. VOTING RIGHTS {-}\n\n**Section 6.01 VOTING ELIGIBILITY**\nVoting eligibility is limited to members who agree to abide by the Council's Code of Ethics.\n\n Eligibility shall remain valid for two (2) years and may be established by either of the following: **(a) Attendance:** Attendance during the preceding two (2) years at a Council meeting, Technical or Administrative Committee meeting, field session, workshop, conference, or other Council-sponsored activity; or **(b) Eligibility Request:**\nSubmission of a written or electronic request for voting eligibility to the Secretary, or same-day registration at a Council meeting, demonstrating an interest or involvement in forest health, forestry, natural resource management, pest management, research, education, fire protection, or related fields.\n**Section 6.02 VOTING RULES**\nEach eligible member shall be entitled to one (1) vote on each matter submitted to the general membership. Unless otherwise provided in these Bylaws, actions of the membership shall be decided by a majority vote of the voting members present.\n**(a) Standard Voting:**\nVoting at meetings shall generally be conducted by voice vote, show of hands, or appropriate electronic means. Any member may demand a verification of a voice vote by a show of hands. A formal, counted vote may be ordered by the Chairperson or by a majority vote of the members present.\n**(b) Ballot or Recorded Voting:**\nA vote shall be conducted by confidential ballot or recorded roll call if a motion to do so is made, seconded, and approved by a majority of the voting members present. The motion must specify whether the vote shall be confidential (anonymous) or recorded (identified). Ballots may be cast physically or through secure electronic platforms that support the requested method. Such a motion must be made before the final result of the standard vote is officially announced by the Chairperson.\n**Section 6.03 ROSTERS**\nThe official roster of eligible voting members shall be maintained by the Council Secretary. To accommodate fluid participation, this roster is maintained as an ongoing record and may be updated during Council meetings to immediately grant voting rights to attendees who establish eligibility on-site.\nEach Technical and Administrative Committee shall maintain an ongoing roster of members participating in or interested in its subject area. Committees shall promptly provide roster updates to the Council Secretary following meetings, field sessions, or workshops."
 
-SOP-003: Conditions Report Guidelines
+proposed_2026[["07-meetings"]] <- "## Article VII. MEETINGS {-}\n**Section 7.01 NOTICE OF MEETINGS**\nThe Council Secretary shall prepare and distribute written or electronic notices of full Council meetings to the membership at least fifteen (15) days prior to the meeting date.\nCommittee Chairpersons or Secretaries shall handle distribution of notices for their respective committee meetings to interested participants, sending copies to members of the Executive Committee.\n**Section 7.02 FULL COUNCIL MEETINGS AND QUORUM**\nThe full Council shall meet at least annually in the Fall for its regular business meeting. The eligible voting members present at any properly noticed Council business meeting shall constitute a quorum for the transaction of business.\n**Section 7.03 EXECUTIVE COMMITTEE MEETINGS**\nRegular meetings of the Executive Committee shall be held periodically throughout the year and prior to the Annual Council Meeting to review operations, manage Council business, and coordinate recommendations being submitted by committees.\n\n**Section 7.04 CONDUCT OF MEETINGS**\nMeetings shall be presided over by the appropriate Chairperson or designated representative. Meetings shall be governed by the current edition of *Robert’s Rules of Order, Newly Revised*, except where such rules are inconsistent with the Articles of Incorporation or these Bylaws.\n**Section 7.05 MINUTES AND RECORDS**\nThe Council Secretary shall prepare and distribute minutes of full Council meetings and Executive Committee meetings within thirty (30) days following each meeting to members of the Executive Committee. Copies of minutes may be distributed to general members with meeting notices or at subsequent meetings.\nTo maintain a centralized organizational archive, the Chairpersons or Secretaries of all Technical and Administrative Committees must promptly transmit copies of their respective meeting minutes, reports, and official correspondence to the Council Secretary.\n\n**Section 7.06 COMMITTEE MEETINGS**\nTechnical Committees shall meet at least annually, prior to the annual Council meeting, to review pest conditions in their subject area and to develop technical findings and recommendations."
 
-SOP-004: Financial Approval Thresholds
+proposed_2026[["08-resolutions"]] <- "## Article VIII. ADVOCACY AND POLICY POSITIONS {-}\n**Section 8.01 RESOLUTIONS AND POLICY STATEMENTS**\nResolutions and official policy statements are the primary means by which the Council advocates action or states technical positions on forest pest and forest health matters.\n**(a) Standard Adoption Process:** Resolutions shall typically be drafted and introduced in the appropriate subject-area committee, task force, or working group. The committee shall forward proposed resolutions to the Executive Committee for review. In alignment with Section 5.03, final adoption of official Council resolutions and public policy positions generally rests with the Executive Committee.\n\n**(b) Discretionary Referral to General Membership:**\nNotwithstanding subsection (a), if the Executive Committee determines that a proposed resolution, policy position, or public statement involves a matter of major significance, controversy, or broad interest to the Council, the Executive Committee may, by majority vote, refer the matter to the full eligible voting membership for a vote at a regular business meeting, special meeting, or via electronic ballot.\n\n**(c) Statutory & Compliance Limits:**\nResolutions shall include the names and contact information of intended recipients. All advocacy and resolutions shall strictly comply with the lobbying and political intervention restrictions set forth in Section 501(c)(3) of the Internal Revenue Code and the Articles of Incorporation.\n\n**Section 8.02 LETTERS OF SUPPORT**\nOfficial Letters of Support may be drafted and issued provided the subject matter strictly aligns with the Council’s established purposes, existing positions, or ongoing initiatives. Requests for Letters of Support shall be submitted to the Executive Committee for review and approval by a simple majority vote. Approved letters may be signed by the Council Chairperson or an authorized designee."
 
-SOP-005: Meeting Agendas & Minutes
+proposed_2026[["09-finances"]] <- "## Article IX. FINANCES {-}\n\n**Section 9.01 EXPENDITURES AND DISBURSEMENTS**\nThe Executive Committee shall oversee and authorize expenditures of Council funds. All disbursements, including checks, electronic funds transfers, and commitments of funds, shall be signed or documented by the Treasurer, Council Chairperson, or another officer designated by the Executive Committee in accordance with established Executive Committee Standard Operating Procedures (SOPs).\n\nSingle-officer approval thresholds and dual-signature requirements for higher transactions shall be defined within Executive Committee operating procedures.\n\n**Section 9.02 DEPOSITS**\nAll funds of the Council shall be deposited promptly to the credit of the Council in such banks, trust companies, or other depositories as selected by the Executive Committee.\n\n**Section 9.03 CONTRACTS AND GRANTS**\nThe Executive Committee may authorize any officer or agent to execute contracts, grant agreements, or formal instruments on behalf of the Council. No officer or agent shall have power to bind the Council to any contract without prior Executive Committee authorization or SOP guidelines.\n\n**Section 9.04 GIFTS AND CONTRIBUTIONS**\nThe Chairperson or Treasurer may accept unencumbered financial contributions or gifts on behalf of the Council. Any gift or bequest consisting of non-liquid assets requiring liquidation or ongoing management (e.g., real estate, equipment, physical property) must be reviewed and approved by the Executive Committee prior to acceptance.\n\n**Section 9.05 FISCAL YEAR**\nThe fiscal year of the Council shall begin on the 1st day of January and end on the 31st day of December.\n\n**Section 9.06 COMPENSATION AND REIMBURSEMENT**\nOfficers, Executive Committee members, and committee chairs shall serve without compensation for their governance services. The Executive Committee or Chairperson may authorize reimbursement of reasonable, actual incidental expenses incurred in support of Council business, subject to established operating procedures."
 
-SOP-006: Electronic Voting & Secret Ballots
+proposed_2026[["10-amendments"]] <- "## Article X. AMENDMENT OF BYLAWS OR ARTICLES OF INCORPORATION {-}\n\n**Section 10.01 AMENDMENT PROCEDURES**\nProposed amendments to these Bylaws or the Articles of Incorporation shall first be submitted to the Executive Committee for review. Upon review, proposed amendments shall be distributed to eligible voting members at least fifteen (15) days prior to the next regular Council business meeting.\n\nThese Bylaws may be amended by a majority vote of the eligible voting members present at a properly noticed Council business meeting. Amendments to the Articles of Incorporation require prior approval by the Executive Committee before submission to the voting membership for adoption by majority vote, and remain subject to statutory filing requirements under California law."
 
-SOP-007: Annual Meeting Planning & Field Safety
 
-SOP-008: Roster Management & Voting Eligibility
+```
 
-SOP-009: Recordkeeping, Internal Controls & Audits
 
-SOP-010: Education & Public Outreach
+```{r setup_single_source, include=FALSE}
+# 1. Define the dynamic height function
+get_dynamic_diff_height <- function(legacy_file, proposed_text, min_height = 350, line_height = 24) {
+  legacy_lines <- if (file.exists(legacy_file)) length(readLines(legacy_file, warn = FALSE)) else 0
+  proposed_lines <- length(strsplit(proposed_text, "\n")[[1]])
+  max_lines <- max(legacy_lines, proposed_lines, 10)
+  return(max(min_height, 150 + (max_lines * line_height)))
+}
 
-SOP-011: Travel Reimbursements & Scholarships
+# 2. Map proposed_2026 key names to your exact legacy section_files
+file_map <- c(
+  "00-preamble"             = "00-preamble.md",
+  "01-name-objectives"      = "01-objectives.md",
+  "02-membership"           = "02-membership.md",
+  "03-officers"             = "03-officers.md",
+  "04-committees"           = "04-committees.md",
+  "05-executive-committee"  = "05-executive-committee.md",
+  "06-voting-rights"        = "06-voting-rights.md",
+  "07-meetings"             = "07-meetings.md",
+  "08-resolutions"          = "08-resolutions.md",
+  "09-finances"             = "09-finances.md",
+  "10-amendments"           = "10-amendments.md"
+)
 
-SOP-012: CEU Accreditation & Administration
+# 3. Create a temporary background directory strictly for diffr to use
+temp_diff_dir <- file.path(tempdir(), "diffr_texts")
+if (!dir.exists(temp_diff_dir)) dir.create(temp_diff_dir, recursive = TRUE)
 
-Archived Corporate & Historical Governance
-
-1951 Legacy Bylaws
-
-1996 Articles of Incorporation
-
-2. STATUTORY & OPERATIONAL CROSSWALK
-This crosswalk maps every section of the Proposed 2026 Bylaws directly to its implementing Standard Operating Procedure (SOP) file.
-```{r crosswalk}
-# Construct crosswalk dataframe
-crosswalk_data <- data.frame(
-  Bylaw_Article = c(
-    "Article I (§ 1.01–1.03)", 
-    "Article II (§ 2.01–2.04)", 
-    "Article III (§ 3.01–3.05)", 
-    "Article IV (§ 4.01–4.08)", 
-    "Article IV (§ 4.06a)", 
-    "Article IV (§ 4.06b)", 
-    "Article V (§ 5.05)", 
-    "Article VI (§ 6.01–6.02)", 
-    "Article VI (§ 6.03)", 
-    "Article VII (§ 7.01–7.05)", 
-    "Article VIII (§ 8.01–8.02)", 
-    "Article IX (§ 9.01–9.03)", 
-    "Article IX (§ 9.05–9.06)", 
-    "Article IX (§ 9.06)"
-  ),
-  Subject_Area = c(
-    "Objectives & Board Advisory Role",
-    "Membership Standards & Ethics",
-    "Officer Duties & Meeting Minutes",
-    "Sub-Committee Structure & Charters",
-    "Pest Conditions Reporting",
-    "Conference Planning & CEUs",
-    "Electronic Meetings & Written Consent",
-    "Voting Eligibility & Secret Ballots",
-    "Master Roster Management",
-    "Annual Meeting & Field Safety",
-    "Public Outreach & Support Letters",
-    "Financial Thresholds & Contracting",
-    "Financial Audits & Record Retention",
-    "Travel Reimbursements & Scholarships"
-  ),
-  Implementing_SOP = c(
-    "SOP-010 (Outreach)",
-    "SOP-001 (Code of Ethics)",
-    "SOP-005 (Agendas/Minutes)",
-    "SOP-002 (Charter Template)",
-    "SOP-003 (Conditions Report)",
-    "SOP-012 (CEU Accreditation)",
-    "SOP-006 (Electronic Voting)",
-    "SOP-006 (Confidential Voting)",
-    "SOP-008 (Membership Roster)",
-    "SOP-007 (Field Safety)",
-    "SOP-010 (Public Outreach)",
-    "SOP-004 (Financial Thresholds)",
-    "SOP-009 (Recordkeeping & Audits)",
-    "SOP-011 (Travel Policy)"
-  ),
-  File_Path = c(
-    "Draft-SOP-009-Outreach.md",
-    "Draft-SOP-001-Proposed_Code_of_Ethics.md",
-    "Draft-SOP-005-Committee-Meeting-Agendas.md",
-    "Draft-SOP-002-Sub-Committee-Charter-Template.md",
-    "Draft-SOP-003-Conditions-Report-Guidelines.md",
-    "Draft-SOP-011-CEUs.md",
-    "Draft-SOP-006-Electronic-Proceedings.md",
-    "Draft-SOP-006-Electronic-Proceedings.md",
-    "Draft-008-Membership-Roster.md",
-    "Draft-SOP-007-Field-Safety.md",
-    "Draft-SOP-009-Outreach.md",
-    "Draft-SOP-004-Financial-Thresholds.md",
-    "Draft-SOP-008-Recordkeeping-Audits.md",
-    "Draft-SOP-010-Travel.md"
+# 4. Build diff widgets using the temporary files
+diff_widgets <- list()
+for (key in names(proposed_2026)) {
+  temp_file_path <- file.path(temp_diff_dir, paste0(key, "_temp.md"))
+  writeLines(proposed_2026[[key]], temp_file_path)
+  
+  legacy_filename <- if (key %in% names(file_map)) file_map[[key]] else paste0(key, ".md")
+  legacy_path <- here::here("Current-Bylaws-Archived", legacy_filename)
+  
+  widget_height <- get_dynamic_diff_height(
+    legacy_file = legacy_path, 
+    proposed_text = proposed_2026[[key]]
   )
-)
+  
+  if (file.exists(legacy_path)) {
+    diff_widgets[[key]] <- diffr(
+      file1 = legacy_path,
+      file2 = temp_file_path,
+      before = "1996 Legacy",
+      after = "2026 Proposed",
+      width = "100%",
+      height = widget_height
+    )
+  }
+}
 
-knitr::kable(crosswalk_data, col.names = c("Bylaws Provision", "Operational Focus", "Implementing SOP", "File Reference"))
 ```
 
-3. INTERACTIVE TEXT COMPARISON (DIFF ANALYSIS)
-The interactive widget below directly compares the historical 1951 Legacy Bylaws against the updated 2026 Proposed Governance Framework to highlight modernizations in committee structure, financial controls, and voting protections.
 
-```{r comparison-widget}
-# Render side-by-side interactive text diff
-diffr(
-  before = "Current-Bylaws-Archived/1951-CFPC-Bylaws.md", 
-  after = "Proposed-2026-Bylaws/Article-4-Committees.md", 
-  beforeTitle = "1951 Legacy Bylaws", 
-  afterTitle = "2026 Proposed Revision (Article IV)"
-)
+```{r 01_compile_text, include=FALSE}
+# --- CHUNK 1: Assemble and Sanitize the Text ---
+# Merges your list into one clean text block separated by horizontal lines
+full_proposed_bylaws_text <- paste(proposed_2026, collapse = "\n\n---\n\n")
+
+# Strip out hidden characters that crash Word document rendering
+full_proposed_bylaws_text <- iconv(full_proposed_bylaws_text, to = "UTF-8", sub = "")
+full_proposed_bylaws_text <- gsub("[\r\b\f\v]", "", full_proposed_bylaws_text)
+
 ```
+
+```{r writeRmd, include=FALSE}
+# --- CHUNK 2: Write the Export File ---
+# Setup directories
+output_dir <- file.path(getwd(), "Proposed-2026-Bylaws")
+export_rmd_path <- file.path(output_dir, "Proposed-2026-Bylaws-Export.Rmd")
+
+# CRITICAL FIX: Convert Windows backslashes to forward slashes
+export_rmd_path <- gsub("\\\\", "/", export_rmd_path)
+
+if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
+
+# Write the temporary standalone .Rmd file
+con <- file(export_rmd_path, open = "wt", encoding = "UTF-8")
+writeLines(
+  c(
+    "---",
+    "output: word_document",
+    "---",
+    "",
+    "# Complete 2026 Proposed Bylaws",
+    "",
+    full_proposed_bylaws_text
+  ),
+  con = con
+)
+close(con)
+```
+
+```{r rewriteWord, include=FALSE}
+# --- CHUNK 3: Render the Word Document ---
+# Launch a detached background R process to safely render the Word doc 
+# without colliding with the active Bookdown HTML build.
+render_cmd <- sprintf('rmarkdown::render("%s", output_format = "word_document", quiet = TRUE)', export_rmd_path)
+system2("Rscript", args = c("-e", shQuote(render_cmd)))
+
+```
+
+Welcome to the interactive governance repository for the California Forest Pest Council (CFPC). This platform is structured to facilitate a transparent review of our organizational transition and is divided into three primary sections:
+
+1. **Historical Archives:** Preserving the legacy 1996 governance documents and foundational corporate records.
+2. **Proposed 2026 Bylaws Revision:** An interactive, side-by-side comparison of the structural updates to the Council’s governing framework.
+3. **Standard Operating Procedures (SOP) Suite:** A framework of administrative guidelines, committee protocols, and operational workflows.
+
+### Offline Review & Downloads{-}
+If you prefer to conduct an offline review or utilize Microsoft Word's native document comparison tools, you may download the compiled files here:
+
+* [Download the 1996 Legacy CFPC Bylaws (.docx)](Current-Bylaws-Archived/1996-CFPC-Bylaws.docx)
+* [Download the 2026 Proposed CFPC Bylaws (.docx)](Proposed-2026-Bylaws/Proposed-2026-Bylaws-Export.docx)
+
+---
+
+**A Note on the Standard Operating Procedures:**
+The SOPs housed in this repository are currently working drafts. Because these documents govern the specific, day-to-day operations of the Council’s various technical and administrative bodies, they will not be enacted simultaneously with the core Bylaws. Instead, they will be developed and adopted progressively at a later date. This phased approach provides knowledgeable members and concerned stakeholders the critical time required to accurately document their institutional knowledge and submit refined operational procedures for Executive Committee consideration.
+
+## MASTER REPOSITORY NAVIGATION MENU 
+
+This index organizes all current, proposed, and archived governance files within the CFPC digital repository. 
+
+**How to Navigate:**
+* **Desktop Users:** Use the collapsible left-hand sidebar menu to navigate directly to specific articles and SOP drafts. 
+* **Mobile Users:** Click the menu icon (≡) at the top left of your screen to open the navigation panel.
+* **Reviewing Bylaws:** Within the "Proposed 2026 Governance Framework" section, use the interactive `diffr` slider boxes to compare the exact textual changes between the 1996 legacy document and the 2026 proposed revision before reading the clean proposed text below it.
+## Table of Contents
+
+- **Archived Corporate & Historical Governance**
+  * [1996 Legacy CFPC Bylaws](#legacy-bylaws)
+  * [1996 Articles of Incorporation](#articles-of-incorporation)
+  * [1996 IRS 501(c)(3) Determination Letter](#irs-letter)
+
+- **Proposed 2026 Governance Framework**
+  * [Preamble](#article-00)
+  * [Article I: Name and Objectives](#article-01)
+  * [Article II: Membership & Ethics](#article-02)
+  * [Article III: Officers and Members-At-Large](#article-03)
+  * [Article IV: Committees](#article-04)
+  * [Article V: The Executive Committee](#article-05)
+  * [Article VI: Voting Rights](#article-06)
+  * [Article VII: Meetings](#article-07)
+  * [Article VIII: Advocacy and Policy Positions](#article-08)
+  * [Article IX: Finances](#article-09)
+  * [Article X: Amendment of Bylaws](#article-10)
+
+- **Standard Operating Procedures (SOP) Suite**
+  * [SOP-001: Proposed Code of Ethics & Professional Conduct](#sop-001)
+  * [SOP-002: Sub-Committee Charter Template](#sop-002)
+  * [SOP-003: Annual Forest Pest Conditions Report Guidelines](#sop-003)
+  * [SOP-004: Financial Approval Thresholds & Grant Expenditure Policy](#sop-004)
+  * [SOP-005: Committee Meeting & Executive Agenda Templates](#sop-005)
+  * [SOP-006: Electronic Voting & Confidential Balloting Procedures](#sop-006)
+  * [SOP-007: Annual Meeting Planning & Field Tour Safety Guidelines](#sop-007)
+  * [SOP-008: Recordkeeping, Internal Controls & Audit Procedures](#sop-008)
+  * [SOP-009: Education, Public Outreach & Stakeholder Engagement](#sop-009)
+  * [SOP-010: Travel Reimbursements & Meeting Scholarships](#sop-010)
+  * [SOP-011: Continuing Education Units (CEU) Accreditation & Administration](#sop-011)
+  * [SOP-012: Membership Roster Management & Eligibility Verification](#sop-012)
+  * [SOP-013: Registration](#sop-013)
+  
+---
+
+---
+
+```{r create_proposed_file_nest}
+# # Uncomment if files get corrumpted again. Paste and run this 
+# # Define the target directory
+# target_dir <- "Proposed-2026-Bylaws"
+# if (!dir.exists(target_dir)) dir.create(target_dir, recursive = TRUE)
+# 
+# chapter_templates <- list(
+#   list(key = "00-preamble", file = "00-preamble.Rmd", title = "PREAMBLE", id = "00"),
+#   list(key = "01-name-objectives", file = "01-objectives.Rmd", title = "ARTICLE I. NAME AND OBJECTIVES", id = "01"),
+#   list(key = "02-membership", file = "02-membership.Rmd", title = "ARTICLE II. MEMBERSHIP & ETHICS", id = "02"),
+#   list(key = "03-officers", file = "03-officers.Rmd", title = "ARTICLE III. OFFICERS AND MEMBERS-AT-LARGE", id = "03"),
+#   list(key = "04-committees", file = "04-committees.Rmd", title = "ARTICLE IV. COMMITTEES", id = "04"),
+#   list(key = "05-executive-committee", file = "05-executive-committee.Rmd", title = "ARTICLE V. THE EXECUTIVE COMMITTEE", id = "05"),
+#   list(key = "06-voting-rights", file = "06-voting-rights.Rmd", title = "ARTICLE VI. VOTING RIGHTS", id = "06"),
+#   list(key = "07-meetings", file = "07-meetings.Rmd", title = "ARTICLE VII. MEETINGS", id = "07"),
+#   list(key = "08-resolutions", file = "08-resolutions.Rmd", title = "ARTICLE VIII. ADVOCACY AND POLICY POSITIONS", id = "08"),
+#   list(key = "09-finances", file = "09-finances.Rmd", title = "ARTICLE IX. FINANCES", id = "09"),
+#   list(key = "10-amendments", file = "10-amendments.Rmd", title = "ARTICLE X. AMENDMENT OF BYLAWS", id = "10")
+# )
+# 
+# for (sec in chapter_templates) {
+#   # Build the literal string using a strict scrolling CSS container set to 800px
+#   content <- sprintf(
+#     "# %s {- #article-%s}\n\n## Interactive Comparison\n\n<div style='width: 100%%; height: 800px; overflow-y: auto; border-bottom: 2px solid #ccc; margin-bottom: 40px;'>\n```{r diff_%s, echo=FALSE, out.width='100%%', out.height='100%%'}\ndiff_widgets[[\"%s\"]]\n```\n</div>\n\n## Proposed 2026 Text\n\n```{r print_%s, echo=FALSE, results='asis'}\ncat(proposed_2026[[\"%s\"]])\n```\n",
+#     sec$title, sec$id, sec$id, sec$key, sec$id, sec$key
+#   )
+#   
+#   # Construct the full file path safely
+#   out_file <- file.path(target_dir, sec$file)
+#   
+#   # Overwrite the files into the designated folder
+#   writeLines(content, out_file)
+#   message(paste("Successfully updated with 800px strict container:", out_file))
+# }
+```
+

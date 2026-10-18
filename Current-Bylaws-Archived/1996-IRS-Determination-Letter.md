@@ -1,4 +1,6 @@
-# INTERNAL REVENUE SERVICE DISTRICT DIRECTOR
+# 1996 IRS 501(c)(3) Determination Letter {#irs-letter}
+
+INTERNAL REVENUE SERVICE DISTRICT DIRECTOR
 DEPARTMENT OF THE TREASURY
 
 **Date:** NOV 18 1996  
@@ -65,3 +67,8 @@ Sincerely,
 District Director  
 
 Enclosure(s): Form 872-C
+
+---
+
+---
+
