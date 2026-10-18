@@ -1,6 +1,5 @@
 ---
 title: "California Forest Pest Council: 2026 Governance Framework & Bylaws Revision"
-author: "Compiled by J. Tamm"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
