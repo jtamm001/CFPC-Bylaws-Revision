@@ -1,0 +1,13 @@
+# Install the package if you do not have it
+install.packages("diffr")
+
+# Load the library and run the comparison
+library(diffr)
+
+# Compare the old bylaws to the new modular article
+diffr("Current-Bylaws-Archived/1951-CFPC-Bylaws.md",
+      "Proposed-2026-Bylaws/Article-4-Committees.md",
+      before = "1951 Legacy Bylaws",
+      after = "2026 Proposed Revision")
+
+Then Use Word's Compare Tool: Open Microsoft Word, navigate to the Review tab, click Compare > Compare..., and select your newly generated 1951 .docx as the "Original" and the 2026 .docx as the "Revised."

@@ -1,0 +1,72 @@
+/* ==========================================================================
+   CFPC Bylaws - GitBook Custom Styles
+   ========================================================================== */
+
+/* --- 1. HTML Widget / diffr Full Expansion Fix --- */
+.diffr,
+.diffr > div,
+.diffr-container,
+.diff-builder {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  min-height: fit-content !important;
+  border: 1px solid #d0d7de !important;
+  border-radius: 6px;
+  overflow: visible !important;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.diffr table {
+  height: auto !important;
+}
+
+/* Prevent height truncation on markup wrapper containers */
+.comparison-container,
+div.markup-body {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* --- 2. Deleted / 1996 Bylaw Text Styles --- */
+del,
+.del-1996,
+span.del-1996,
+.text-danger,
+.text-red {
+  color: #dc3545 !important;
+  text-decoration: line-through !important;
+  font-weight: normal !important;
+}
+
+/* --- 3. Added / 2026 Bylaw Text Styles --- */
+ins,
+.ins-2026,
+span.ins-2026,
+.text-success,
+.text-green {
+  color: #0d8abc !important;
+  text-decoration: underline !important;
+  font-weight: bold !important;
+}
+
+/* --- 4. Annotations & Highlights --- */
+.text-primary,
+.text-blue {
+  color: #0d6efd !important;
+}
+
+.legal-note {
+  color: #6c757d !important;
+  font-style: italic !important;
+}
+
+.highlight-box {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 8px 12px;
+  margin: 10px 0;
+}

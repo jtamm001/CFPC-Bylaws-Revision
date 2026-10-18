@@ -1,0 +1,9 @@
+# Clear old build artifacts
+unlink("_main.Rmd")
+unlink("docs", recursive = TRUE)
+
+# 1. Render the book (this automatically creates the docs/ directory)
+bookdown::render_book("index.Rmd", "bookdown::gitbook")
+
+# 2. Now create the .nojekyll file inside docs/
+file.create("docs/.nojekyll")

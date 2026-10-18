@@ -1,0 +1,39 @@
+
+delete_merged_file: true
+rmd_files:
+  - "index.Rmd"
+
+  # Group 1: Archived Governance
+  - "Current-Bylaws-Archived/1996-CFPC-Bylaws.md"
+  - "Current-Bylaws-Archived/1996-Articles-of-Incorporation.md"
+  - "Current-Bylaws-Archived/1996-IRS-Determination-Letter.md"
+
+  # Group 2: Modernized 2026 Framework
+  - "Proposed-2026-Bylaws/00-preamble.Rmd"
+  - "Proposed-2026-Bylaws/01-objectives.Rmd"
+  - "Proposed-2026-Bylaws/02-membership.Rmd"
+  - "Proposed-2026-Bylaws/03-officers.Rmd"
+  - "Proposed-2026-Bylaws/04-committees.Rmd"
+  - "Proposed-2026-Bylaws/05-executive-committee.Rmd"
+  - "Proposed-2026-Bylaws/06-voting-rights.Rmd"
+  - "Proposed-2026-Bylaws/07-meetings.Rmd"
+  - "Proposed-2026-Bylaws/08-resolutions.Rmd"
+  - "Proposed-2026-Bylaws/09-finances.Rmd"
+  - "Proposed-2026-Bylaws/10-amendments.Rmd"
+
+  # Group 3: SOP Suite
+  - "sops-header.Rmd"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-001-Proposed_Code_of_Ethics.md"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-002-Sub-Committee-Charter-Template.md"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-003-Conditions-Report.md"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-004-Financial-Threshold-SOP.md"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-005-Committee-Meeting-Agenda-Template.md"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-006-Electronic-Proceedings.md"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-007-Field-Safety.md"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-008-Recordkeeping-Audits.md"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-009-Outreach.md"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-010-Travel.md"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-011-CEUs.md"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-012-Membership-Roster.md"
+  - "Proposed-Standard-Operating-Procedures/Draft-SOP-013-registration.md"
+

@@ -1,0 +1,1 @@
+rmarkdown::render("Current-Bylaws-Archived/1951-CFPC-Bylaws.md", output_format = "word_document")

@@ -1,0 +1,16 @@
+# ARTICLE IX. FINANCES {- #article-09}
+
+## Interactive Comparison
+
+<div style='width: 100%; height: 800px; overflow-y: auto; border-bottom: 2px solid #ccc; margin-bottom: 40px;'>
+```{r diff_09, echo=FALSE, out.width='100%', out.height='100%'}
+diff_widgets[["09-finances"]]
+```
+</div>
+
+## Proposed 2026 Text
+
+```{r print_09, echo=FALSE, results='asis'}
+cat(proposed_2026[["09-finances"]])
+```
+

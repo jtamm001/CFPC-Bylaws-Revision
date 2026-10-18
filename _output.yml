@@ -1,0 +1,16 @@
+bookdown::gitbook:
+  css: style.css
+  split_by: none
+  config:
+    toc:
+      collapse: section
+      scroll_highlight: true
+      before: |
+        <li><a href="./">CFPC Governance Suite</a></li>
+      after: |
+        <li><a href="https://github.com" target="blank">CFPC Repository</a></li>
+    download: ["pdf", "epub"]
+    sharing:
+      github: yes
+      facebook: no
+      twitter: no

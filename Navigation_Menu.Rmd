@@ -1,0 +1,70 @@
+---
+title: "California Forest Pest Council — Master Repository Navigation Index & Governance Crosswalk"
+subtitle: "Complete Operational Framework (Bylaws, Archives, Templates, and SOP Suite 001–011)"
+author: "CFPC Executive Committee"
+date: "October 14, 2026"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    theme: readable
+    highlight: tango
+  pdf_document:
+    toc: true
+    toc_depth: 3
+---
+
+# 1. MASTER REPOSITORY NAVIGATION MENU
+
+This navigation menu indexes all current, proposed, template, and archived governance files within the California Forest Pest Council (CFPC) digital repository.
+
+### Table of Contents
+
+* **[Introduction & Governance Overview](README.md)**
+* **[Proposed 2026 Bylaws & Executive Records](Proposed-2026-Bylaws/README.md)**
+  * [Proposed 2026 Bylaws (Master Document)](Proposed-2026-Bylaws/Proposed-2026-Bylaws.md)[cite: 2]
+  * [Executive Committee & Membership Comment Record](Proposed-2026-Bylaws/Comment-Record.md)[cite: 2]
+  * [Governance Revision Summary](Proposed-2026-Bylaws/Summary.md)[cite: 2]
+* **Standard Operating Procedures (SOPs) & Operating Templates**
+  * [SOP-001: Proposed Code of Ethics & Professional Conduct](Draft-SOP-001-Proposed_Code_of_Ethics.md)[cite: 1]
+  * [SOP-002: Sub-Committee Charter Template](Draft-SOP-002-Sub-Committee-Charter-Template.md)[cite: 1]
+  * [SOP-003: Annual Forest Pest Conditions Report Guidelines](Draft-SOP-003-Conditions-Report-Guidelines.md)[cite: 1]
+  * [SOP-004: Financial Approval Thresholds & Grant Expenditure Policy](Draft-SOP-004-Financial-Thresholds.md)[cite: 1]
+  * [SOP-005: Committee Meeting & Executive Agenda Templates](Draft-SOP-005-Committee-Meeting-Agendas.md)[cite: 1]
+  * [SOP-006: Electronic Voting & Confidential Balloting Procedures](Draft-SOP-006-Electronic-Proceedings.md)[cite: 1]
+  * [SOP-007: Annual Meeting Planning & Field Tour Safety Guidelines](Draft-SOP-007-Field-Safety.md)[cite: 1]
+  * [SOP-008: Membership Roster Management & Eligibility Verification](Draft-008-Membership-Roster.md)[cite: 1]
+  * [SOP-009: Recordkeeping, Internal Controls & Audit Procedures](Draft-SOP-008-Recordkeeping-Audits.md)[cite: 1]
+  * [SOP-010: Education, Public Outreach & Stakeholder Engagement](Draft-SOP-009-Outreach.md)[cite: 1]
+  * [SOP-011: Travel Reimbursements & Meeting Scholarships](Draft-SOP-010-Travel.md)[cite: 1]
+  * [SOP-012: Continuing Education Units (CEU) Accreditation & Administration](Draft-SOP-011-CEUs.md)[cite: 1]
+* **[Archived Corporate & Historical Governance](Current-Bylaws-Archived/README.md)**[cite: 3]
+  * [1951 CFPC Original Bylaws](Current-Bylaws-Archived/1951-CFPC-Bylaws.md)[cite: 3]
+  * [1996 Articles of Incorporation](Current-Bylaws-Archived/1996-Articles-of-Incorporation.md)[cite: 3]
+  * [1996 IRS 501(c)(3) Determination Letter](Current-Bylaws-Archived/1996-IRS-Determination-Letter.md)[cite: 3]
+
+---
+
+# 2. GOVERNANCE CROSSWALK TABLE
+
+This crosswalk maps every Article of the **Proposed 2026 CFPC Bylaws** directly to its corresponding operational **Standard Operating Procedure (SOP)**, template file, and historical reference file.
+
+| Bylaws Article & Statutory Authority | Operational Subject Area | Implementing SOP / File | Repository Path |
+| :--- | :--- | :--- | :--- |
+| **Article I (§ 1.01–1.03)** | Name, Objectives & BOF Advisory Role | SOP-010 (Outreach) | `Draft-SOP-009-Outreach.md`[cite: 1] |
+| **Article II (§ 2.01–2.04)** | Membership Standards & Code of Ethics | SOP-001 (Code of Ethics) | `Draft-SOP-001-Proposed_Code_of_Ethics.md`[cite: 1] |
+| **Article III (§ 3.01–3.05)** | Duties of Officers & Reporting | SOP-005 (Agendas/Minutes) | `Draft-SOP-005-Committee-Meeting-Agendas.md`[cite: 1] |
+| **Article III (§ 3.06–3.07)** | Non-Liability & Indemnification | 1996 Articles / Bylaws | `Current-Bylaws-Archived/1996-Articles-of-Incorporation.md`[cite: 3] |
+| **Article IV (§ 4.01–4.08)** | Sub-Committee Tracks & Charters | SOP-002 (Charter Template) | `Draft-SOP-002-Sub-Committee-Charter-Template.md`[cite: 1] |
+| **Article IV (§ 4.06a)** | Editorial Pest Conditions Reporting | SOP-003 (Conditions Report) | `Draft-SOP-003-Conditions-Report-Guidelines.md`[cite: 1] |
+| **Article IV (§ 4.06b)** | Conference Planning & CEUs | SOP-012 (CEU Accreditation) | `Draft-SOP-011-CEUs.md`[cite: 1] |
+| **Article V (§ 5.01–5.03)** | Executive Committee Oversight | SOP-005 (EC Agendas) | `Draft-SOP-005-Committee-Meeting-Agendas.md`[cite: 1] |
+| **Article V (§ 5.05)** | Written Consent & Electronic Meetings | SOP-006 (Electronic Voting) | `Draft-SOP-006-Electronic-Proceedings.md`[cite: 1] |
+| **Article VI (§ 6.01–6.02)** | Voting Eligibility & Secret Ballots | SOP-006 (Confidential Voting) | `Draft-SOP-006-Electronic-Proceedings.md`[cite: 1] |
+| **Article VI (§ 6.03)** | Master Roster & Eligibility Records | SOP-008 (Membership Roster) | `Draft-008-Membership-Roster.md`[cite: 1] |
+| **Article VII (§ 7.01–7.05)** | Annual Meeting & Field Safety | SOP-007 (Field Safety) | `Draft-SOP-007-Field-Safety.md`[cite: 1] |
+| **Article VIII (§ 8.01–8.02)** | Advocacy, Statements & Support | SOP-010 (Public Outreach) | `Draft-SOP-009-Outreach.md`[cite: 1] |
+| **Article IX (§ 9.01–9.03)** | Financial Approval Thresholds | SOP-004 (Financial SOP) | `Draft-SOP-004-Financial-Thresholds.md`[cite: 1] |
+| **Article IX (§ 9.05–9.06)** | Audits, Grants & Retention | SOP-009 (Recordkeeping) | `Draft-SOP-008-Recordkeeping-Audits.md`[cite: 1] |
+| **Article IX (§ 9.06)** | Travel Claims & Scholarships | SOP-011 (Travel Policy) | `Draft-SOP-010-Travel.md`[cite: 1] |

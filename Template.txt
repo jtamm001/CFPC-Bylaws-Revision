@@ -1,0 +1,64 @@
+# LEGAL MARKUP TEMPLATE: CALIFORNIA FOREST PEST COUNCIL BYLAWS
+
+**KEY:**  
+- Deleted 1996 Text: <del class="del-1996">[Red Strikethrough]</del> / [Deleted Text]{custom-style="DeletedText"}  
+- Added 2026 Text: <ins class="ins-2026">[Blue/Green Underline]</ins> / [Added Text]{custom-style="AddedText"}  
+- Notes / Annotations: *[Italics Bracketed]*
+
+[This 1996 text was deleted]{.del-1996}
+[This 2026 text was added]{.ins-2026}
+---
+
+### PREAMBLE / HISTORICAL CONTINUITY
+
+<del class="del-1996">ARTICLE 1 OBJECTIVES</del>  
+<ins class="ins-2026">**PREAMBLE**</ins>  
+
+<del class="del-1996">SECTION 1. The California Forest Pest Council (herein referred to as the "Council") is an organization, founded in 1951, of private and public forest managers, foresters, entomologists, pathologists, zoologists, biologists and others interested in the protection of forests from damage caused by animals, insects, diseases, and weeds.</del>
+
+<ins class="ins-2026">**The California Forest Pest Council traces its origins to the California Forest Pest Control Action Council, organized in 1951 to coordinate forest pest detection, reporting, and management efforts among public agencies, private landowners, and forestry professionals throughout California.**</ins>
+
+<ins class="ins-2026">**The Council continues this tradition by bringing together representatives of public agencies, private industry, academic institutions, Tribal governments, landowners, researchers, educators, and other interested parties to promote and protect the health of California's forests.**</ins>
+
+---
+
+### ARTICLE I. NAME AND OBJECTIVES
+
+**Section 1.01 NAME**  
+The name of this organization is the California Forest Pest Council (herein referred to as the "Council"), <ins class="ins-2026">**a California Nonprofit Public Benefit Corporation.**</ins>
+
+**Section 1.02 OBJECTIVES**  
+The objectives of the Council are to:
+1. Coordinate the detection, reporting, and compilation of pest damage.
+2. Evaluate pest conditions.
+3. Make recommendations on pest control to forest management and protection agencies and forest landowners.
+4. Review policy, legal, <ins class="ins-2026">**educational,**</ins> and research aspects of forest pest management and submit recommendations thereon to appropriate authorities.
+5. Foster educational work on forest pests and forest health.
+
+**Section 1.03 ADVISORY ROLE**  
+The Council is recognized by the <del class="del-1996">State</del> <ins class="ins-2026">**California**</ins> Board of Forestry <ins class="ins-2026">**and Fire Protection**</ins> as <del class="del-1996">the</del> <ins class="ins-2026">**an**</ins> advisory body <del class="del-1996">to it</del> with respect to forest health protection matters<del class="del-1996">, and is a participating member of the Western Forest Pest Committee of the Western Forestry and Conservation Association</del>.
+
+---
+
+### ARTICLE II. MEMBERSHIP & ETHICS
+
+**Section 2.01 ELIGIBILITY FOR MEMBERSHIP**  
+<del class="del-1996">Participation in</del> <ins class="ins-2026">**Membership in**</ins> the Council is open to <ins class="ins-2026">**individuals and organizational representatives**</ins> <del class="del-1996">anyone</del> having an interest in forest health<del class="del-1996"> protection</del>, <ins class="ins-2026">**forest pest management, or related natural resource fields.**</ins> <del class="del-1996">There is only one class of membership and all members have the same voting rights and privileges.</del> <ins class="ins-2026">**Members are expected to support the Council's mission and abide by the Council's Code of Ethics.**</ins>
+
+<ins class="ins-2026">**Section 2.02 MEMBERSHIP RECORDS**</ins>  
+<ins class="ins-2026">**The Council shall maintain a roster of current members. Prospective members may be asked to provide information necessary to establish and maintain membership records in a manner approved by the Executive Committee.**</ins>
+
+<ins class="ins-2026">**Section 2.04 SUSPENSION OR TERMINATION OF MEMBERSHIP**</ins>  
+<ins class="ins-2026">**(a) Grounds: Membership, including any associated voting privileges, may be suspended or terminated for conduct inconsistent with the Council's Code of Ethics, bylaws, or mission.**</ins>  
+<ins class="ins-2026">**(b) Procedures: The Council shall seek to address concerns through discussion and resolution whenever practical. Before suspension or termination becomes effective, the member shall be informed of the concern and provided an opportunity to respond. Suspension or termination shall require approval by a two-thirds (2/3) vote of the Executive Committee members present and voting.**</ins>
+
+---
+
+### ARTICLE III. OFFICERS AND GOVERNANCE
+
+**Section 3.01 OFFICERS AND TERMS**  
+The Council shall elect from its membership for a two-year term of office a Chairperson, Vice-Chairperson, Secretary, <ins class="ins-2026">**Treasurer, and three (3) Members-at-Large.**</ins> <del class="del-1996">A treasurer, conference chairman and editorial chairman will be appointed annually by the council chairperson to serve a one year term.</del>
+
+<ins class="ins-2026">**Section 3.07 INDEMNIFICATION AND INSURANCE**</ins>  
+<ins class="ins-2026">**To the fullest extent permitted by California law, the Council shall indemnify its Officers, Executive Committee members, committee chairs, and authorized agents acting in good faith and in a manner they reasonably believed to be in the best interests of the Council. The Council may maintain appropriate Errors & Omissions (E&O) insurance or professional liability coverage for the protection of its leadership and agents.**</ins>
+

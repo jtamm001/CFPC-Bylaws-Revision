@@ -1,0 +1,88 @@
+CFPC Governance Framework: Word Conversion, Tracked Changes & Legal Comparison
+
+GuidePrepared for: Executive Committee, California Forest Pest Council (CFPC)
+
+Subject: Converting Legacy (1996) and Proposed (2026) Bylaws to Microsoft Word (.docx) for Tracked Changes and Legal ReviewExecutive
+
+SummaryTo facilitate formal legal review, stakeholder circulation, and board deliberation on the modernized California Forest Pest Council (CFPC) Bylaws, this guide outlines:Automated conversion workflows from Markdown (.md) source files to Microsoft Word (.docx) format using Pandoc or RStudio.Step-by-step instructions for executing a native Microsoft Word Document Comparison ("Compare Documents").Standard operating protocols for legal and legislative markup conventions (strikethrough for deletions, double underline/color for insertions).An executive-ready Legal Comparison Template demonstrating side-by-side and inline redline presentation.Part 1. Converting Markdown Bylaws to Word (.docx)Because the source documents are stored in Markdown format within the bookdown repository (Current-Bylaws-Archived/1996-CFPC-Bylaws.md and Proposed-2026-Bylaws/Proposed-2026-Bylaws.md), convert them to .docx before performing a native Word comparison.Method A: RStudio Terminal (Using Pandoc directly)Open the Terminal tab in RStudio (or your system terminal).Execute the following Pandoc commands from the project root directory:# Convert 1996 Legacy Bylaws to Word
+pandoc Current-Bylaws-Archived/1996-CFPC-Bylaws.md -o 1996-CFPC-Bylaws.docx --reference-doc=_output_template.docx
+
+# Convert 2026 Proposed Bylaws to Word in console.
+
+rmarkdown::render("Current-Bylaws-Archived/1996-CFPC-Bylaws.md", output_format = "word_document")
+rmarkdown::render("Proposed-2026-Bylaws/Proposed-2026-Bylaws.md", output_format = "word_document")
+# Render 1996 Bylaws to Word
+rmarkdown::render(
+  input = "Current-Bylaws-Archived/1996-CFPC-Bylaws.md",
+  output_format = "word_document",
+  output_file = "1996-CFPC-Bylaws.docx"
+)
+
+# Render 2026 Proposed Bylaws to Word
+rmarkdown::render(
+  input = "Proposed-2026-Bylaws/Proposed-2026-Bylaws.md",
+  output_format = "word_document",
+  output_file = "2026-Proposed-Bylaws.docx"
+)
+Part 2. Step-by-Step Instructions for Word Compare & Track ChangesOnce both .docx files are generated, perform a complete structural comparison in Microsoft Word to generate an automated redline document.Step 1: Open Word CompareLaunch Microsoft Word.Navigate to the Review tab on the top ribbon menu.Click Compare $\rightarrow$ select Compare... (Compare two versions of a document).Step 2: Select Source FilesIn the Original document box, click the folder icon and select 1996-CFPC-Bylaws.docx.In the Revised document box, click the folder icon and select 2026-Proposed-Bylaws.docx.Under Label changes with, enter CFPC Legal Review or 2026 Revision.Step 3: Configure Comparison SettingsClick More >> to expand the options panel:Comparison settings: Ensure the following boxes are checked:[x] Moves[x] Formatting[x] Case changes[x] Whitespace[x] Tables[x] Headers and footersShow changes at: Select Character level (recommended for precise legislative redlines) or Word level.Show changes in: Select New document (preserves original conversion outputs).Step 4: Run and Save the ComparisonClick OK.Word will build a new document highlighting all differences in redline markup.Save the resulting file as:CFPC_Bylaws_1996_vs_2026_TRACKED_CHANGES.docxPart 3. Standard Legal/Legislative Markup Formatting RulesWhen presenting redlined bylaws to board members, legal counsel, or public agency stakeholders, adhere to standard legislative drafting styles:Change TypeStandard FormattingVisual RepresentationDeleted Text (1996 language removed)Strikethrough + Red TextDeleted text from 1996Added Text (2026 language introduced)Double Underline + Blue/Green TextNew text in 2026 revisionMoved Text (Reordered section)Green Strikethrough (Original) / Green Underline (New)[Moved from Section 3]Substantive ClarificationMarginal Comment Tag[Comment CFPC-01: Aligns with Corp Code § 5210]Part 4. Legal Comparison & Tracked Changes TemplateBelow is a standardized template showing how key articles appear when rendered in formal legal markup format.# LEGAL MARKUP TEMPLATE: CALIFORNIA FOREST PEST COUNCIL BYLAWS
+
+**KEY:**
+- Deleted 1996 Text: ~~[Red Strikethrough]~~
+- Added 2026 Text: <u>**[Blue/Green Underline]**</u>
+- Notes / Annotations: *[Italics Bracketed]*
+
+---
+
+### PREAMBLE / HISTORICAL CONTINUITY
+
+~~ARTICLE 1 OBJECTIVES~~
+<u>**PREAMBLE**</u>
+
+~~SECTION 1. The California Forest Pest Council (herein referred to as the "Council") is an organization, founded in 1951, of private and public forest managers, foresters, entomologists, pathologists, zoologists, biologists and others interested in the protection of forests from damage caused by animals, insects, diseases, and weeds.~~
+
+<u>**The California Forest Pest Council traces its origins to the California Forest Pest Control Action Council, organized in 1951 to coordinate forest pest detection, reporting, and management efforts among public agencies, private landowners, and forestry professionals throughout California.**</u>
+
+<u>**The Council continues this tradition by bringing together representatives of public agencies, private industry, academic institutions, Tribal governments, landowners, researchers, educators, and other interested parties to promote and protect the health of California's forests.**</u>
+
+---
+
+### ARTICLE I. NAME AND OBJECTIVES
+
+**Section 1.01 NAME**
+The name of this organization is the California Forest Pest Council (herein referred to as the "Council"), <u>**a California Nonprofit Public Benefit Corporation.**</u>
+
+**Section 1.02 OBJECTIVES**
+The objectives of the Council are to:
+1. Coordinate the detection, reporting, and compilation of pest damage.
+2. Evaluate pest conditions.
+3. Make recommendations on pest control to forest management and protection agencies and forest landowners.
+4. Review policy, legal, <u>**educational,**</u> and research aspects of forest pest management and submit recommendations thereon to appropriate authorities.
+5. Foster educational work on forest pests and forest health.
+
+**Section 1.03 ADVISORY ROLE**
+The Council is recognized by the ~~State~~ <u>**California**</u> Board of Forestry <u>**and Fire Protection**</u> as ~~the~~ <u>**an**</u> advisory body ~~to it~~ with respect to forest health protection matters~~, and is a participating member of the Western Forest Pest Committee of the Western Forestry and Conservation Association~~.
+
+---
+
+### ARTICLE II. MEMBERSHIP & ETHICS
+
+**Section 2.01 ELIGIBILITY FOR MEMBERSHIP**
+~~Participation in~~ <u>**Membership in**</u> the Council is open to <u>**individuals and organizational representatives**</u> ~~anyone~~ having an interest in forest health~~ protection~~, <u>**forest pest management, or related natural resource fields.**</u> ~~There is only one class of membership and all members have the same voting rights and privileges.~~ <u>**Members are expected to support the Council's mission and abide by the Council's Code of Ethics.**</u>
+
+<u>**Section 2.02 MEMBERSHIP RECORDS**</u>
+<u>**The Council shall maintain a roster of current members. Prospective members may be asked to provide information necessary to establish and maintain membership records in a manner approved by the Executive Committee.**</u>
+
+<u>**Section 2.04 SUSPENSION OR TERMINATION OF MEMBERSHIP**</u>
+<u>**(a) Grounds:** Membership, including any associated voting privileges, may be suspended or terminated for conduct inconsistent with the Council's Code of Ethics, bylaws, or mission.</u>
+<u>**(b) Procedures:** The Council shall seek to address concerns through discussion and resolution whenever practical. Before suspension or termination becomes effective, the member shall be informed of the concern and provided an opportunity to respond. Suspension or termination shall require approval by a two-thirds (2/3) vote of the Executive Committee members present and voting.</u>
+
+---
+
+### ARTICLE III. OFFICERS AND GOVERNANCE
+
+**Section 3.01 OFFICERS AND TERMS**
+The Council shall elect from its membership for a two-year term of office a Chairperson, Vice-Chairperson, Secretary, <u>**Treasurer, and three (3) Members-at-Large.**</u> ~~A treasurer, conference chairman and editorial chairman will be appointed annually by the council chairperson to serve a one year term.~~
+
+<u>**Section 3.07 INDEMNIFICATION AND INSURANCE**</u>
+<u>**To the fullest extent permitted by California law, the Council shall indemnify its Officers, Executive Committee members, committee chairs, and authorized agents acting in good faith and in a manner they reasonably believed to be in the best interests of the Council. The Council may maintain appropriate Errors & Omissions (E&O) insurance or professional liability coverage for the protection of its leadership and agents.**</u>
+Summary of Next Steps for Board DistributionExecute the Pandoc command or R code snippet above to generate 1996-CFPC-Bylaws.docx and 2026-Proposed-Bylaws.docx.Run Microsoft Word Compare to create CFPC_Bylaws_1996_vs_2026_TRACKED_CHANGES.docx.Distribute the combined tracked-changes Word document alongside your live GitHub Pages link for full transparency during board review.

@@ -1,0 +1,152 @@
+---
+title: "California Forest Pest Council — Master Index & Governance Crosswalk"
+subtitle: "Interactive Revision Analysis & Repository Map"
+author: "CFPC Executive Committee"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    theme: readable
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+# Load required libraries for crosswalk rendering and document comparison
+library(diffr)
+library(knitr)
+library(dplyr)
+```
+
+1. REPOSITORY NAVIGATION INDEX
+Below is the directory map linking the core governance suite, standard operating procedures, and historical archives:
+
+Proposed 2026 Governance Suite
+
+Proposed 2026 Bylaws (Master Document)
+
+Executive Committee Comment Record
+
+Revision Summary
+
+Standard Operating Procedures (SOPs)
+
+SOP-001: Code of Ethics
+
+SOP-002: Committee Charter Template
+
+SOP-003: Conditions Report Guidelines
+
+SOP-004: Financial Approval Thresholds
+
+SOP-005: Meeting Agendas & Minutes
+
+SOP-006: Electronic Voting & Secret Ballots
+
+SOP-007: Annual Meeting Planning & Field Safety
+
+SOP-008: Roster Management & Voting Eligibility
+
+SOP-009: Recordkeeping, Internal Controls & Audits
+
+SOP-010: Education & Public Outreach
+
+SOP-011: Travel Reimbursements & Scholarships
+
+SOP-012: CEU Accreditation & Administration
+
+Archived Corporate & Historical Governance
+
+1951 Legacy Bylaws
+
+1996 Articles of Incorporation
+
+2. STATUTORY & OPERATIONAL CROSSWALK
+This crosswalk maps every section of the Proposed 2026 Bylaws directly to its implementing Standard Operating Procedure (SOP) file.
+```{r crosswalk}
+# Construct crosswalk dataframe
+crosswalk_data <- data.frame(
+  Bylaw_Article = c(
+    "Article I (§ 1.01–1.03)", 
+    "Article II (§ 2.01–2.04)", 
+    "Article III (§ 3.01–3.05)", 
+    "Article IV (§ 4.01–4.08)", 
+    "Article IV (§ 4.06a)", 
+    "Article IV (§ 4.06b)", 
+    "Article V (§ 5.05)", 
+    "Article VI (§ 6.01–6.02)", 
+    "Article VI (§ 6.03)", 
+    "Article VII (§ 7.01–7.05)", 
+    "Article VIII (§ 8.01–8.02)", 
+    "Article IX (§ 9.01–9.03)", 
+    "Article IX (§ 9.05–9.06)", 
+    "Article IX (§ 9.06)"
+  ),
+  Subject_Area = c(
+    "Objectives & Board Advisory Role",
+    "Membership Standards & Ethics",
+    "Officer Duties & Meeting Minutes",
+    "Sub-Committee Structure & Charters",
+    "Pest Conditions Reporting",
+    "Conference Planning & CEUs",
+    "Electronic Meetings & Written Consent",
+    "Voting Eligibility & Secret Ballots",
+    "Master Roster Management",
+    "Annual Meeting & Field Safety",
+    "Public Outreach & Support Letters",
+    "Financial Thresholds & Contracting",
+    "Financial Audits & Record Retention",
+    "Travel Reimbursements & Scholarships"
+  ),
+  Implementing_SOP = c(
+    "SOP-010 (Outreach)",
+    "SOP-001 (Code of Ethics)",
+    "SOP-005 (Agendas/Minutes)",
+    "SOP-002 (Charter Template)",
+    "SOP-003 (Conditions Report)",
+    "SOP-012 (CEU Accreditation)",
+    "SOP-006 (Electronic Voting)",
+    "SOP-006 (Confidential Voting)",
+    "SOP-008 (Membership Roster)",
+    "SOP-007 (Field Safety)",
+    "SOP-010 (Public Outreach)",
+    "SOP-004 (Financial Thresholds)",
+    "SOP-009 (Recordkeeping & Audits)",
+    "SOP-011 (Travel Policy)"
+  ),
+  File_Path = c(
+    "Draft-SOP-009-Outreach.md",
+    "Draft-SOP-001-Proposed_Code_of_Ethics.md",
+    "Draft-SOP-005-Committee-Meeting-Agendas.md",
+    "Draft-SOP-002-Sub-Committee-Charter-Template.md",
+    "Draft-SOP-003-Conditions-Report-Guidelines.md",
+    "Draft-SOP-011-CEUs.md",
+    "Draft-SOP-006-Electronic-Proceedings.md",
+    "Draft-SOP-006-Electronic-Proceedings.md",
+    "Draft-008-Membership-Roster.md",
+    "Draft-SOP-007-Field-Safety.md",
+    "Draft-SOP-009-Outreach.md",
+    "Draft-SOP-004-Financial-Thresholds.md",
+    "Draft-SOP-008-Recordkeeping-Audits.md",
+    "Draft-SOP-010-Travel.md"
+  )
+)
+
+knitr::kable(crosswalk_data, col.names = c("Bylaws Provision", "Operational Focus", "Implementing SOP", "File Reference"))
+```
+
+3. INTERACTIVE TEXT COMPARISON (DIFF ANALYSIS)
+The interactive widget below directly compares the historical 1951 Legacy Bylaws against the updated 2026 Proposed Governance Framework to highlight modernizations in committee structure, financial controls, and voting protections.
+
+```{r comparison-widget}
+# Render side-by-side interactive text diff
+diffr(
+  before = "Current-Bylaws-Archived/1951-CFPC-Bylaws.md", 
+  after = "Proposed-2026-Bylaws/Article-4-Committees.md", 
+  beforeTitle = "1951 Legacy Bylaws", 
+  afterTitle = "2026 Proposed Revision (Article IV)"
+)
+```

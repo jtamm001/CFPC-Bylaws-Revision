@@ -1,0 +1,16 @@
+# ARTICLE VIII. ADVOCACY AND POLICY POSITIONS {- #article-08}
+
+## Interactive Comparison
+
+<div style='width: 100%; height: 800px; overflow-y: auto; border-bottom: 2px solid #ccc; margin-bottom: 40px;'>
+```{r diff_08, echo=FALSE, out.width='100%', out.height='100%'}
+diff_widgets[["08-resolutions"]]
+```
+</div>
+
+## Proposed 2026 Text
+
+```{r print_08, echo=FALSE, results='asis'}
+cat(proposed_2026[["08-resolutions"]])
+```
+
